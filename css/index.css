@@ -1,0 +1,39 @@
+.Responsive_Assembla_Slide{
+	background-image: url("../img/Assembla's_logo.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+}
+.Responsive_Github_Slide{
+	background-image: url("../img/GitHub_logo.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: auto;
+	display: block;
+}
+.Responsive_Eclipse_Slide{
+	background-image: url("../img/Eclipse_IDE_logo.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+}
+.Responsive_Lineage_Class_Slide{
+	background-image: url("../img/Line][Age_Class.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+}
+.Responsive_Share_Code_Slide{
+	background-image: url("../img/Share_your_code.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+}
