@@ -40,3 +40,10 @@
 .Github_color_line{
 	color: grey;
 }
+.GIT{
+	background-image: url("../img/GitHub_logo.png");
+	display: block;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
