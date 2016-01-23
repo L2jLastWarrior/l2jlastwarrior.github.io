@@ -47,3 +47,14 @@
 	background-size: auto;
 	display: block;
 }
+.SVN{
+	background-image: url("../img/Assembla's_logo.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+}
+.featurette{
+	background-color: rgba(0,0,0,0.1);
+}
