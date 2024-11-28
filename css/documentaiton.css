@@ -9,23 +9,39 @@
     color: white;
     margin-bottom: 100px;
     margin-top: 100px;
-    
-    border: 1px solid green;
+
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid black;
     border-radius: 10px;
 }
 
-.data_container_panel{
+.data_container_panel {
     margin: 5px 5px 5px 5px;
 }
 
-.data_container_panel ul{
+.data_container_panel ul {
     list-style-type: square;
 }
 
+.data_container_panel .choose_OS button{
+    transition-duration: 0.5s;
+    font-size: 25px;
+}
+
+.data_container_panel .choose_OS button:hover{
+    background-color: green;
+    color: white;
+}
+
 code {
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
-    background-color: #f5f5f5; /* Light gray background */
-    padding: 0.2em 0.4em; /* Padding around the code */
-    border-radius: 4px; /* Rounded corners */
-    color: #d63384; /* Text color */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospaced font */
+    background-color: #f5f5f5;
+    /* Light gray background */
+    padding: 0.2em 0.4em;
+    /* Padding around the code */
+    border-radius: 4px;
+    /* Rounded corners */
+    color: #d63384;
+    /* Text color */
 }

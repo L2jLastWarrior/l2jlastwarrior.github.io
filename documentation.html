@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="./css/navbar.css">
         <link rel="stylesheet" type="text/css" href="./css/documentaiton.css">
     </head>
-    <body onload="scroll();return false;">
+    <body>
         <header>
             <div class="header_container">
                 <ul>
@@ -56,10 +56,18 @@
                     <li>PhpMyAdmin</li>
                     <li>Updated Os</li>
                 </ul>
-                <h2>Updated Os</h2>
+                <h2>Select OS</h2>
                 <div class="choose_OS">
-                    
+                    <button id="WinBtn">Windows</button>
+                    <button id="LinuxBtn">Debian Linux</button>
+                    <button id="LinuxBtn">Arch Linux</button>
                 </div>
+                <h2>Updated Os</h2>
+                <div id="output_UpdateOS"></div>
+                <h2>Java</h2>
+                <h2>MariaDB</h2>
+                <h2>PHP</h2>
+                <h2>PhpMyAdmin</h2>
             </div>
         </div>
 
@@ -79,9 +87,5 @@
         </footer>
     </body>
 
-    <script>
-        function scroll(){
-            window.scrollTo(130,0)
-        }
-    </script>
+    <script src="./script/documentation_buttons.js" type="text/javascript"></script>
 </html>
