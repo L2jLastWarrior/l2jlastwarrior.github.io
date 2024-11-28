@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #FFF;
+    text-decoration: none;
+
+    background-image: url("../img/carbon_hexagon.png");
+    background-size: cover;
+
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+
+    border-top-style: none;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-left-style: none;
+
+    padding: 0;
+}
+
+.header_container{
+    position: fixed;
+    width: 99%;
+    top: 0;
+    margin-top: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5px;
+    
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+li img{
+    display: block;
+    width: 100%;
+    margin-top: -10px;
+}
+
+li a:hover:not(.active) {
+    color: gray;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+footer {
+    background-color: #333;
+    position: fixed;
+    margin-bottom: 5px;
+    bottom: 0;
+    width: 99%;
+}
+
+.footer_container {
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer_container a {
+    color: white;
+    text-decoration: none
+}
+
+
+.footer_container a:hover {
+    color: gray;
+}
+
+.footer_container span{
+    margin-top:12px;
+    display: block;
+    height: 20px;
+    width: 1px;
+    float: left;
+	border: 0;
+    margin-left:1px;
+}
+
+.footer_team{
+    color: gray;
+}
