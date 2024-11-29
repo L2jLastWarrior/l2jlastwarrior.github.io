@@ -50,3 +50,7 @@ text {
     background-color: green;
     color: white;
 }
+
+#updateos-link,#java-link,#mariadb-link,#apache-link,#php-link,#phpmyadmin-link{
+    cursor: pointer;
+}

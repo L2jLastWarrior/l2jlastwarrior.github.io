@@ -2,12 +2,37 @@ window.addEventListener('load',()=>{
     WindowsBtn.click();
 });
 
+// Scroll to Headers
+document.getElementById('updateos-link').addEventListener('click',()=>{
+    document.getElementById('select-os').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('java-link').addEventListener('click',()=>{
+    document.getElementById('select-java').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('mariadb-link').addEventListener('click',()=>{
+    document.getElementById('select-mariadb').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('apache-link').addEventListener('click',()=>{
+    document.getElementById('select-apache').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('php-link').addEventListener('click',()=>{
+    document.getElementById('select-php').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('phpmyadmin-link').addEventListener('click',()=>{
+    document.getElementById('select-phpmyadmin').scrollIntoView({behavior:'smooth'});
+});
+
 // Take button's element
 const WindowsBtn = document.getElementById('WinBtn');
 const DebianBtn = document.getElementById('DebianBtn');
 const ArchBtn = document.getElementById("ArchBtn");
 
-// Create Element
+// Template Element
 const codeElement = document.createElement('code');
 const textElement = document.createElement('text');
 
@@ -25,6 +50,16 @@ const strAboutMariaDB = document.getElementById('aboutmariadb');
 const codeAboutMariaDB = document.createElement('code');
 const strErrorAboutMariaDB = document.getElementById('erroraboutmariadb');
 const linkMariaDB = document.createElement('a');
+// PHP
+const strAboutPhp = document.getElementById('aboutphp');
+const codeAboutPhp = document.createElement('code');
+const strErrorAboutPhp = document.getElementById('erroraboutphp');
+const linkPhp = document.createElement('a');
+// PhpMyAdmin
+const strAboutPhpMyAdmin = document.getElementById('aboutphpmyadmin');
+const codeAboutPhpMyAdmin = document.createElement('code');
+const strErrorAboutPhpMyAdmin = document.getElementById('erroraboutphpmyadmin');
+const linkPhpMyAdmin = document.createElement('a');
 
 WindowsBtn.addEventListener('click', () => {
     strUpdateOs.innerHTML = 'To take the last Windows update will use the CMD.exe and this Command: ';
