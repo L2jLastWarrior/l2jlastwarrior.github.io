@@ -3,6 +3,10 @@ window.addEventListener('load',()=>{
 });
 
 // Scroll to Headers
+document.getElementById('backtop').addEventListener('click',()=>{
+    document.getElementById('select-installation').scrollIntoView({behavior:'smooth'});
+});
+
 document.getElementById('updateos-link').addEventListener('click',()=>{
     document.getElementById('select-os').scrollIntoView({behavior:'smooth'});
 });

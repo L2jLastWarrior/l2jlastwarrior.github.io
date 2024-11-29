@@ -62,3 +62,9 @@ footer {
 .footer_team{
     color: gray;
 }
+
+#backtop{
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}
