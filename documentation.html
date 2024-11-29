@@ -1,104 +1,116 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>L2jLastWarrior Project</title>
-        <link rel="icon" href="./img/lineage2.ico">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/navbar.css">
-        <link rel="stylesheet" type="text/css" href="./css/documentaiton.css">
-    </head>
-    <body>
-        <header>
-            <div class="header_container">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./documentation.html">Documentation</a></li>
-                    <li><a href="https://discord.gg/z2XavqF3Rc" target="_blank">Forum</a></li>
-                    <li style="float: right;"><a href="./license.html"><img src="./img/gplv3-127x51.png" alt="gplv3_icon"></a></li>
-                    <div class="dropdown">
-                        <button class="dropBtn">Download Project<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="">Interlude C6</a>
-                            <a href="">Classic Interlude</a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </header>
 
-        <div class="data_container">
-            <div class="data_container_panel">
-                <h1>Installation Guide</h1>
-                <h2>Introduction</h2>
-                <h3>About Us</h3>
-                <h4>
-                    L2J LastWarrior is the private project developed in Java that attempts to provide a game server for Lineage II.<br>
-                    We have been around for a long time, and our mission is to provide the closest experience to the official game.<br>
-                    Our vision is to have a server that can run any version of the game based on configurations and using a microservice cloud-ready architecture.
-                </h4>
-                <h3>About the Product</h3>
-                <h4>
-                    L2J LastWarrior divides in two components, L2jGameServer and L2jLoginServer, at the same time L2jGameServer is divided<br>
-                    in Core and Datapack. The Core is the Java code that defines the game mechanics, persistence and communication mechanics,<br>
-                    and the Datapack is composed by all the files that are related to the game play such as dialogs, quest scripts, AIs, etc.<br>
-                    <br>
-                    Our project uses <a href="https://l2jserver.com/" target="_blank">L2jServer</a> as <a href="https://www.l2jmobius.org/" target="_blank">L2jMobius</a> files and we mixed it with our ideas and the greater good.
-                </h4>
-                <h2>Software Required</h2>
-                <h4>
-                    We use only open-source programs!
-                </h4>
-                <ul>
-                    <li id="updateos-link">Updated Os</li>
-                    <li id="java-link">Java</li>
-                    <li id="mariadb-link">MariaDB</li>
-                    <li id="apache-link">Apache</li>
-                    <li id="php-link">PHP</li>
-                    <li id="phpmyadmin-link">PhpMyAdmin</li>
-                </ul>
-                <h2>Select OS</h2>
-                <div class="choose_OS">
-                    <button id="WinBtn">Windows</button>
-                    <button id="DebianBtn">Debian Linux</button>
-                    <button id="ArchBtn">Arch Linux</button>
+<head>
+    <meta charset="utf-8">
+    <title>L2jLastWarrior Project</title>
+    <link rel="icon" href="./img/lineage2.ico">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/documentaiton.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./documentation.html">Documentation</a></li>
+                <li><a href="https://discord.gg/z2XavqF3Rc" target="_blank">Forum</a></li>
+                <li style="float: right;"><a href="./license.html"><img src="./img/gplv3-127x51.png"
+                            alt="gplv3_icon"></a></li>
+                <div class="dropdown">
+                    <button class="dropBtn">Download Project<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="">Interlude C6</a>
+                        <a href="">Classic Interlude</a>
+                    </div>
                 </div>
-                <h2 id="select-os">How to update Os</h2>
-                <div id="howtoupdateOS"></div>
-                <h2 id="select-java">How to install Java</h2>
-                <div id="aboutjava"></div><br>
-                <div id="erroraboutjava"></div>
-                <h2 id="select-mariadb">How to install MariaDB</h2>
-                <div id="aboutmariadb"></div><br>
-                <div id="erroraboutmariadb"></div>
-                <h2 id="select-apache">How to install Apache</h2>
-                <div id="aboutapache"></div><br>
-                <div id="erroraboutapache"></div>
-                <h2 id="select-php">How to install PHP</h2>
-                <div id="aboutphp"></div><br>
-                <div id="erroraboutphp"></div>
-                <h2 id="select-phpmyadmin">How to install PhpMyAdmin</h2>
-                <div id="aboutphpmyadmin"></div><br>
-                <div id="erroraboutphpmyadmin"></div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="data_container">
+        <div class="data_container_panel">
+            <h1>Installation Guide</h1>
+            <h2>Introduction</h2>
+            <h3>About Us</h3>
+            <h4>
+                L2J LastWarrior is the private project developed in Java that attempts to provide a game server for
+                Lineage II.<br>
+                We have been around for a long time, and our mission is to provide the closest experience to the
+                official game.<br>
+                Our vision is to have a server that can run any version of the game based on configurations and using a
+                microservice cloud-ready architecture.
+            </h4>
+            <h3>About the Product</h3>
+            <h4>
+                L2J LastWarrior divides in two components, L2jGameServer and L2jLoginServer, at the same time
+                L2jGameServer is divided<br>
+                in Core and Datapack. The Core is the Java code that defines the game mechanics, persistence and
+                communication mechanics,<br>
+                and the Datapack is composed by all the files that are related to the game play such as dialogs, quest
+                scripts, AIs, etc.<br>
+                <br>
+                Our project uses <a href="https://l2jserver.com/" target="_blank">L2jServer</a> as <a
+                    href="https://www.l2jmobius.org/" target="_blank">L2jMobius</a> files and we mixed it with our ideas
+                and the greater good.
+            </h4>
+            <h2>Software Required</h2>
+            <h4>
+                We use only open-source programs!
+            </h4>
+            <ul>
+                <li id="updateos-link">Updated Os</li>
+                <li id="java-link">Java</li>
+                <li id="mariadb-link">MariaDB</li>
+                <li id="apache-link">Apache</li>
+                <li id="php-link">PHP</li>
+                <li id="phpmyadmin-link">PhpMyAdmin</li>
+            </ul>
+            <h2>Select OS</h2>
+            <div class="choose_OS">
+                <button id="WinBtn">Windows</button>
+                <button id="DebianBtn">Debian Linux</button>
+                <button id="ArchBtn">Arch Linux</button>
+            </div>
+            <h2 id="select-os">How to update Os</h2>
+            <div id="howtoupdateOS"></div>
+            <h2 id="select-java">How to install Java</h2>
+            <div id="aboutjava"></div><br>
+            <div id="erroraboutjava"></div>
+            <h2 id="select-mariadb">How to install MariaDB</h2>
+            <div id="aboutmariadb"></div><br>
+            <div id="erroraboutmariadb"></div>
+            <h2 id="select-apache">How to install Apache</h2>
+            <div id="aboutapache"></div><br>
+            <div id="erroraboutapache"></div>
+            <h2 id="select-php">How to install PHP</h2>
+            <div id="aboutphp"></div><br>
+            <div id="erroraboutphp"></div>
+            <h2 id="select-phpmyadmin">How to install PhpMyAdmin</h2>
+            <div id="aboutphpmyadmin"></div><br>
+            <div id="erroraboutphpmyadmin"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <a href="https://discord.gg/Ddh2YwQGsH" target="_blank">Discord</a>
+            <span></span>
+            <a href="https://discord.gg/z2XavqF3Rc" target="_blank">Forum</a>
+            <span></span>
+            <a href="https://github.com/L2jLastWarrior" target="_blank">SourceCode &#10084;</a>
+            <span></span>
+            <div style="clear: both;"></div>
+            <div class="footer_team">
+                Copyright &copy; 2008-2024 L2J LastWarrior DevTeam. All rights reserved.
             </div>
         </div>
+    </footer>
+</body>
 
-        <footer>
-            <div class="footer_container">
-                <a href="https://discord.gg/Ddh2YwQGsH" target="_blank">Discord</a>
-                <span></span>
-                <a href="https://discord.gg/z2XavqF3Rc" target="_blank">Forum</a>
-                <span></span>
-                <a href="https://github.com/L2jLastWarrior" target="_blank">SourceCode &#10084;</a>
-                <span></span>
-                <div style="clear: both;"></div>
-                <div class="footer_team">
-                    Copyright &copy; 2008-2024 L2J LastWarrior DevTeam. All rights reserved.
-                </div>
-            </div>
-        </footer>
-    </body>
+<script src="./script/documentation_buttons.js" type="text/javascript"></script>
 
-    <script src="./script/documentation_buttons.js" type="text/javascript"></script>
 </html>
