@@ -7,6 +7,7 @@ document.getElementById('backtop').addEventListener('click',()=>{
     document.getElementById('select-installation').scrollIntoView({behavior:'smooth'});
 });
 
+// Software Required
 document.getElementById('java_download_link').addEventListener('click',()=>{
     document.getElementById('select_java').scrollIntoView({behavior:'smooth'});
 });
@@ -18,6 +19,38 @@ document.getElementById('mariadb_download_link').addEventListener('click',()=>{
 document.getElementById('dbeaver_download_link').addEventListener('click',()=>{
     document.getElementById('select_dbeaver').scrollIntoView({behavior:'smooth'});
 });
+
+// L2J LastWarrior Server Emulation
+document.getElementById('database_configuration_link').addEventListener('click',()=>{
+    document.getElementById('select_database').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('register_configuration_link').addEventListener('click',()=>{
+    document.getElementById('select_gsregister').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('loginserver_configuration_link').addEventListener('click',()=>{
+    document.getElementById('select_loginserver').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('gameserver_configuration_link').addEventListener('click',()=>{
+    document.getElementById('select_gameserver').scrollIntoView({behavior:'smooth'});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Take button's element
 const WindowsBtn = document.getElementById('WinBtn');
