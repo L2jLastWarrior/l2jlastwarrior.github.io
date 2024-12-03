@@ -51,6 +51,12 @@ text {
     color: white;
 }
 
-#updateos-link,#java-link,#mariadb-link,#apache-link,#php-link,#phpmyadmin-link{
+#java_download_link,
+#mariadb_download_link,
+#dbeaver_download_link,
+#database_configuration_link,
+#register_configuration_link,
+#loginserver_configuration_link,
+#gameserver_configuration_link{
     cursor: pointer;
 }
