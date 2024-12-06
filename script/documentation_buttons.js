@@ -21,6 +21,10 @@ document.getElementById('dbeaver_download_link').addEventListener('click',()=>{
 });
 
 // L2J LastWarrior Server Emulation
+document.getElementById('prepate_configuration_link').addEventListener('click',()=>{
+    document.getElementById('select_prepare').scrollIntoView({behavior:'smooth'});
+});
+
 document.getElementById('database_configuration_link').addEventListener('click',()=>{
     document.getElementById('select_database').scrollIntoView({behavior:'smooth'});
 });
@@ -37,21 +41,6 @@ document.getElementById('gameserver_configuration_link').addEventListener('click
     document.getElementById('select_gameserver').scrollIntoView({behavior:'smooth'});
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Take button's element
 const WindowsBtn = document.getElementById('WinBtn');
 const LinuxBtn = document.getElementById('LinuxBtn');
@@ -60,6 +49,7 @@ const LinuxBtn = document.getElementById('LinuxBtn');
 const codeElement = document.createElement('code');
 const textElement = document.createElement('text');
 
+// Software Required
 const strHowToJava = document.getElementById('how_to_java');
 const linkJava = document.createElement('a');
 
@@ -68,6 +58,13 @@ const linkMariaDB = document.createElement('a');
 
 const strHowToDBeaver = document.getElementById('how_to_dbeaver');
 const linkDBeaver = document.createElement('a');
+
+// L2J LastWarrior Server Emulation
+const strHowToPrepare = document.getElementById('how_to_prepare');
+const strHowToDatabase = document.getElementById('how_to_database');
+const strHowToGSRegister = document.getElementById('how_to_gsregister');
+const strHowToLoginServer = document.getElementById('how_to_loginserver');
+const strHowToGameServer = document.getElementById('how_to_gameserver');
 
 WindowsBtn.addEventListener('click', () => {
     strHowToJava.innerHTML = 'You can download the Java Runtime Environment(JRE) from here: ';
@@ -87,6 +84,15 @@ WindowsBtn.addEventListener('click', () => {
     linkDBeaver.target = '_blank';
     linkDBeaver.textContent = 'Download for Windows';
     strHowToDBeaver.appendChild(linkDBeaver);
+
+    strHowToPrepare.innerText = 'After you get our project zip file you must to unzip it into suitable path, the easiest path is `Desktop`';
+
+    strHowToDatabase.innerText = 'To begin Database installation you must run the `Install_GameServerDB.bat and Install_LoginServerDB.bat` from folder tools.\n' + 
+                                'Fill in all information about your MariaDB or Mysql connection such `localhost,username,password and database` and click connect.\n' +
+                                'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n' +
+                                'The choice Full Install it will delete all data from database that enter.\n' + 
+                                'The choice Upgrade it will add data into database with out lose any previous data.\n'+
+                                'And with Exit the Database Installer will be terminate!';
 });
 
 LinuxBtn.addEventListener('click', () => {
@@ -107,4 +113,17 @@ LinuxBtn.addEventListener('click', () => {
     linkDBeaver.target = '_blank';
     linkDBeaver.textContent = 'Download for Linux';
     strHowToDBeaver.appendChild(linkDBeaver);
+
+    strHowToPrepare.innerText = 'After you get our project zip file you must to unzip it into suitable path, the easiest path is `Desktop`.\n' +
+                                'Then we must make executables all files with `.sh` to do that we use this command in folder(loginserver,gameserver,tools): ';
+    const a = document.createElement('code');
+    a.innerText = 'dos2unix *.sh && chmod +x *.sh';
+    strHowToPrepare.appendChild(a);
+
+    strHowToDatabase.innerText = 'To begin Database installation you must run the `Install_GameServerDB.sh and Install_LoginServerDB.sh` from folder tools.\n' + 
+                                'Fill in all information about your MariaDB or Mysql connection such `localhost,username,password and database` and click connect.\n' +
+                                'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n' +
+                                'The choice Full Install it will delete all data from database that enter.\n' + 
+                                'The choice Upgrade it will add data into database with out lose any previous data.\n'+
+                                'And with Exit the Database Installer will be terminate!';
 });
