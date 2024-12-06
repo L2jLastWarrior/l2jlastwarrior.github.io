@@ -85,7 +85,7 @@ WindowsBtn.addEventListener('click', () => {
     linkDBeaver.textContent = 'Download for Windows';
     strHowToDBeaver.appendChild(linkDBeaver);
 
-    strHowToPrepare.innerText = 'After you get our project zip file you must to unzip it into suitable path, the easiest path is `Desktop`';
+    strHowToPrepare.innerText = 'After you get our project zip file you must to unzip it into suitable path, the easiest path is `C:` Drive';
 
     strHowToDatabase.innerText = 'To begin Database installation you must run the `Install_GameServerDB.bat and Install_LoginServerDB.bat` from folder tools.\n' + 
                                 'Fill in all information about your MariaDB or Mysql connection such `localhost,username,password and database` and click connect.\n' +
@@ -114,15 +114,16 @@ LinuxBtn.addEventListener('click', () => {
     linkDBeaver.textContent = 'Download for Linux';
     strHowToDBeaver.appendChild(linkDBeaver);
 
-    strHowToPrepare.innerText = 'After you get our project zip file you must to unzip it into suitable path, the easiest path is `Desktop`.\n' +
-                                'Then we must make executables all files with `.sh` to do that we use this command in folder(loginserver,gameserver,tools): ';
-    const a = document.createElement('code');
-    a.innerText = 'dos2unix *.sh && chmod +x *.sh';
-    strHowToPrepare.appendChild(a);
+    strHowToPrepare.innerText = 'After you get our project zip file you must to unzip it into suitable path, the easiest path is `/home/user`.\n' +
+                                'Then we must make executables all files with `.sh` to do that we use this command in bash(terminal) at folders(loginserver,gameserver,tools): ';
+    const dos2unix_cmd = document.createElement('code');
+    dos2unix_cmd.innerText = 'dos2unix *.sh && chmod +x *.sh';
+    strHowToPrepare.appendChild(dos2unix_cmd);
 
-    strHowToDatabase.innerText = 'To begin Database installation you must run the `Install_GameServerDB.sh and Install_LoginServerDB.sh` from folder tools.\n' + 
+    strHowToDatabase.innerText = 'To begin Database installation you must run the `Install_GameServerDB.sh and Install_LoginServerDB.sh` from folder tools.\n' +
+                                'To execute the files double click or from terminal(bash) run ./Install_GameServerDB.sh or ./Install_LoginServerDB.sh.\n' + 
                                 'Fill in all information about your MariaDB or Mysql connection such `localhost,username,password and database` and click connect.\n' +
-                                'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n' +
+                                'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n\n' +
                                 'The choice Full Install it will delete all data from database that enter.\n' + 
                                 'The choice Upgrade it will add data into database with out lose any previous data.\n'+
                                 'And with Exit the Database Installer will be terminate!';
