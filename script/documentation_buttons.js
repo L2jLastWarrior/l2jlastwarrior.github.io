@@ -89,10 +89,27 @@ WindowsBtn.addEventListener('click', () => {
 
     strHowToDatabase.innerText = 'To begin Database installation you must run the `Install_GameServerDB.bat and Install_LoginServerDB.bat` from folder tools.\n' + 
                                 'Fill in all information about your MariaDB or Mysql connection such `localhost,username,password and database` and click connect.\n' +
-                                'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n' +
-                                'The choice Full Install it will delete all data from database that enter.\n' + 
+                                'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n\n' +
+                                'The choice Full Install it will delete all data from database.\n' + 
                                 'The choice Upgrade it will add data into database with out lose any previous data.\n'+
                                 'And with Exit the Database Installer will be terminate!';
+
+    strHowToGSRegister.innerText = 'To Register the GameServer run the RegisterGameServer.bat from loginserver folder and type help then select the empty Server.\n' + 
+                                    'When the program finished you will found an generated file with name hedix, move this file inside the gameserver/config/loader\n';
+
+    strHowToLoginServer.innerText = 'To start the L2jLoginServer you must settings up the config file that you will find it loginserver/config/Network loginserver.ini\n' + 
+                                    'Fill in all information:\n';
+    const loginCode = document.createElement('code');
+    loginCode.innerText = 'URL = jdbc:mysql://localhost/loginsever_database_name\nLogin = database_username\nPassword = database_password\n';
+    strHowToLoginServer.appendChild(loginCode);
+    strHowToLoginServer.append('Save the settings and run the StartLoginServer.bat from loginserver folder');
+
+    strHowToGameServer.innerText = 'To start the L2jGameServer you must settings up the config file that you will find it gameserver/config/Network gameserver.ini\n' + 
+                                    'Fill in all information:\n';
+    const gameCode = document.createElement('code');
+    gameCode.innerText = 'GameserverDB = gameserver_database_name\nLoginserverDB = loginsever_database_name\nLogin = database_username\nPassword = database_password\n';
+    strHowToGameServer.appendChild(gameCode);
+    strHowToGameServer.append('Save the settings and run the StartGameServer.bat from gameserver folder');
 });
 
 LinuxBtn.addEventListener('click', () => {
@@ -124,7 +141,24 @@ LinuxBtn.addEventListener('click', () => {
                                 'To execute the files double click or from terminal(bash) run ./Install_GameServerDB.sh or ./Install_LoginServerDB.sh.\n' + 
                                 'Fill in all information about your MariaDB or Mysql connection such `localhost,username,password and database` and click connect.\n' +
                                 'If the information about your connection is currect our database installer ask you `Full Install,Upgrade,Exit`\n\n' +
-                                'The choice Full Install it will delete all data from database that enter.\n' + 
+                                'The choice Full Install it will delete all data from database.\n' + 
                                 'The choice Upgrade it will add data into database with out lose any previous data.\n'+
                                 'And with Exit the Database Installer will be terminate!';
+
+    strHowToGSRegister.innerText = 'To Register the GameServer run the RegisterGameServer.sh from loginserver folder and type help then select the empty Server.\n' + 
+                                'When the program finished you will found an generated file with name hedix, move this file inside the gameserver/config/loader\n';
+
+    strHowToLoginServer.innerText = 'To start the L2jLoginServer you must settings up the config file that you will find it loginserver/config/Network loginserver.ini\n' + 
+                                    'Fill in all information:\n';
+    const loginCode = document.createElement('code');
+    loginCode.innerText = 'URL = jdbc:mysql://localhost/loginsever_database_name\nLogin = database_username\nPassword = database_password\n';
+    strHowToLoginServer.appendChild(loginCode);
+    strHowToLoginServer.append('Save the settings and run the StartLoginServer.sh from loginserver folder');
+
+    strHowToGameServer.innerText = 'To start the L2jGameServer you must settings up the config file that you will find it gameserver/config/Network gameserver.ini\n' + 
+                                    'Fill in all information:\n';
+    const gameCode = document.createElement('code');
+    gameCode.innerText = 'GameserverDB = gameserver_database_name\nLoginserverDB = loginsever_database_name\nLogin = database_username\nPassword = database_password\n';
+    strHowToGameServer.appendChild(gameCode);
+    strHowToGameServer.append('Save the settings and run the StartGameServer.sh from gameserver folder');
 });
